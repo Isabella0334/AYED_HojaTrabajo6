@@ -1,6 +1,8 @@
+// OrganicHashFunction.java
 public class OrganicHashFunction implements IHashFunction {
+    @Override
     public String hash(String input) {
-        // La versión orgánica simplemente devuelve el mismo dato de entrada.
+        // Devuelve el mismo dato que se ingresa
         return input;
     }
 }
