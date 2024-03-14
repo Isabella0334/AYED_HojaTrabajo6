@@ -7,11 +7,11 @@ public class MapFactory<K, V> {
     public Map<K, V> getMap(String type) {
         switch (type) {
             case "HashMap":
-                return new HashMap<K, V>();
+                return new HashMap<>();
             case "TreeMap":
-                return new TreeMap<K, V>();
+                return new TreeMap<>();
             case "LinkedHashMap":
-                return new LinkedHashMap<K, V>();
+                return new LinkedHashMap<>();
             default:
                 return null;
         }
