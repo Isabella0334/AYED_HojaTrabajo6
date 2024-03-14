@@ -1,10 +1,22 @@
-import org.junit.Assert;
-import org.junit.Test;
 
+/*
+*   UNIVERSIDAD DEL VALLE DE GUATEMALA
+*   ALGORITMOS Y ESTRUCTURA DE DATOS
+*   CC2016
+*   AUTORES:
+            Milton Giovanni Polanco Serrano
+            Isabella Recinos Rodríguez
+    FECHA: Jueves 14 de marzo del año 2024
+    DESCRIPCIÓN: Hoja de trabajo 6
+    LINK A REPOSITORIO: https://github.com/Isabella0334/AYED_HojaTrabajo6.git
+*/
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.TreeMap;
+
+import org.junit.Assert;
+import org.junit.Test;
 
 public class MapFactoryTest {
 
@@ -29,7 +41,7 @@ public class MapFactoryTest {
     @Test
     public void testInsertionAndRetrieval() {
         MapFactory factory = new MapFactory();
-        Map<String, String> map = factory.getMap("HashMap"); 
+        Map<String, String> map = factory.getMap("HashMap");
         map.put("key1", "value1");
         map.put("key2", "value2");
 
@@ -42,7 +54,7 @@ public class MapFactoryTest {
     @Test
     public void testRemoval() {
         MapFactory factory = new MapFactory();
-        Map<String, String> map = factory.getMap("HashMap"); 
+        Map<String, String> map = factory.getMap("HashMap");
         map.put("key1", "value1");
         map.put("key2", "value2");
         map.remove("key1");
