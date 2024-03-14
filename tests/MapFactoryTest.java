@@ -29,7 +29,7 @@ public class MapFactoryTest {
     @Test
     public void testInsertionAndRetrieval() {
         MapFactory factory = new MapFactory();
-        Map<String, String> map = factory.getMap("HashMap"); // Repeat for each map type as needed
+        Map<String, String> map = factory.getMap("HashMap"); 
         map.put("key1", "value1");
         map.put("key2", "value2");
 
@@ -42,7 +42,7 @@ public class MapFactoryTest {
     @Test
     public void testRemoval() {
         MapFactory factory = new MapFactory();
-        Map<String, String> map = factory.getMap("HashMap"); // Repeat for each map type as needed
+        Map<String, String> map = factory.getMap("HashMap"); 
         map.put("key1", "value1");
         map.put("key2", "value2");
         map.remove("key1");
@@ -51,5 +51,4 @@ public class MapFactoryTest {
         Assert.assertNull(map.get("key1"));
     }
 
-    // Add additional tests for specific behaviors of TreeMap and LinkedHashMap if needed
 }
