@@ -5,7 +5,7 @@
 *   AUTORES:
             Milton Giovanni Polanco Serrano
             Isabella Recinos Rodríguez
-    FECHA: Jueves 14 de marzo del año 2024
+    FECHA: Viernes 22 de marzo del año 2024
     DESCRIPCIÓN: Hoja de trabajo 6
     LINK A REPOSITORIO: https://github.com/Isabella0334/AYED_HojaTrabajo6.git
 */
@@ -49,12 +49,5 @@ public class FileReader {
             e.printStackTrace();
         }
         return students;
-    }
-
-    public static void main(String[] args) {
-        List<Student> students = readStudentsFromFile("path_to_your_json_file.json");
-        for (Student student : students) {
-            System.out.println(student);
-        }
     }
 }
